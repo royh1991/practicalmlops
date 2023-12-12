@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 on:
   push:
       paths:
-        - 'chapter_1/**'
+        - 'chapter_1/'
 jobs:
   build:
     runs-on: ubuntu-latest
