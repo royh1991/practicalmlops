@@ -25,9 +25,11 @@ jobs:
       - name: Lint
         run: |
           make lint
+        working-directory: chapter_1/
       - name: testing with pytest
         run: |
           make test
+        working-directory: chapter_1/
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
