@@ -20,7 +20,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          make install
+          ls ${{ github.workspace }} && make install
+        working-directory: chapter_1/
       - name: Lint
         run: |
           make lint
